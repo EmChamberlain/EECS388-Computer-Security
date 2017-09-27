@@ -1,0 +1,26 @@
+# Problem 1
+
+Since an HMAC uses an inner hash and an outer hash, if we were to try
+a length extension attack on an HMAC token we would only be extending
+the inner hash and not the message. To fully extend the message in
+this case we would need the secret key (user's password). If we have the
+secret key we can make a token ourselves no problem without having to resort
+to length extension attacks. So an HMAC design mostly protects from length
+extension vulnerabilities.
+
+# Problem 2
+
+In general, collision attacks can pose a threat to systems that verify the
+integrity of programs before running them using vulnerable hash algorithms
+because its conceivable that someone could construct a malicious program that
+hashes to the same value as a genuine program. This malicious program would
+then bypass the integrity check. What we did in part 2 shows a trivial example
+of this. Two programs that hash to the same value run differently.
+
+# Problem 3
+
+An exponent of 2^16 + 1 ensures that no matter what message (m) we encrypt
+with RSA, m^(2^16 + 1) will be greater than the modulus used. This means we can
+no longer use a bleichenbacher attack because it relies on standard nth root
+and not modular nth root. Standard nth root is easy whereas modular nth root is
+very hard.
