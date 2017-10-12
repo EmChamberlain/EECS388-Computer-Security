@@ -29,7 +29,6 @@ def main():
     user_command = url[url.find("user="):]
 
     message = "&command3=UnlockAllSafes"
-
     h = md5(state=token.decode("hex"), count=512)
     h.update(message)
 
