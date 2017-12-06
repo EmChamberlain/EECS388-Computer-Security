@@ -39,6 +39,8 @@ The last activity was loading www.bbcworldnew.com at 2009-11-30 12:13:35
 
 11. The machine is running an apache web server.
 
-12. The file auth.log.1 shows a large number of failed password attempts so it looks like the suspect did indeed brute force the password using hydra.
+12. The file auth.log.1 shows a large number of failed password attempts so it looks like the suspect did indeed brute force the password using hydra. The suspect's first successful login in was at 2009-11-25 09:45:09 but they did nothing until a later login at 2009-11-25 10:31:35 where he changed the root password.
 
-13. The suspect has defaced the web page to make fun of Dr. Academic Researcher
+13. The suspect has defaced the web page to make fun of Dr. Academic Researcher as well as changed the root password.
+
+14. There is a passwd.bak in the /var/backups directory that most likely could be used to restore the previous root password.
