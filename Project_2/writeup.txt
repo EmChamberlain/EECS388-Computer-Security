@@ -1,0 +1,13 @@
+SQL injection
+Santize your input to prevent almost all SQL injection attacks. This means escaping all user supplied characters that enter a query. Most standard SQL libraries have this functionality built in and the Bungle! devs should use established libraries.
+
+
+XSS
+Santize your input to prevent almost all XSS attacks. This means escaping all user supplied characters that are displayed on the web page. The Bungle! devs should use accepted libraries to do this instead of try themselves.
+
+
+
+CSRF
+The Bungle! devs should make sure their website is not vulnerable to XSS attacks and should also use a csrf_token that is randomly generated for each post request. The csrf_token stops naive CSRF attacks but can be bypassed using XSS. The Bungle! devs should not mix CSRF and XSS.
+
+
