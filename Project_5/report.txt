@@ -39,6 +39,6 @@ The last activity was loading www.bbcworldnew.com at 2009-11-30 12:13:35
 
 11. The machine is running an apache web server.
 
-12.
+12. The file auth.log.1 shows a large number of failed password attempts so it looks like the suspect did indeed brute force the password using hydra.
 
 13. The suspect has defaced the web page to make fun of Dr. Academic Researcher
