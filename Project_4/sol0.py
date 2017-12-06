@@ -1,0 +1,1 @@
+print "yuandrew" + "\x00" * 2 + "A+"
