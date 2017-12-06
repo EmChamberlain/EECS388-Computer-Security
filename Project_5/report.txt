@@ -1,0 +1,44 @@
+1. The suspect's machine automatically boots into Puppy linux instead of into the ubuntu user that the suspect actually uses. And after you boot once into puppy you can no longer boot into anything.
+
+
+2. Puppy linux version 2.6.30.5 is the version we are logged into automatically. The suspect uses Linux Ubuntu 2.6.28-16-generic
+
+3. Nefarious is the name of the home directory and nefarious is the username most used. nefarious-laptop is the name of the machine.
+
+4. It does seem that there was an accomplice with the email swolchok@swolchokhost.eecs.umich.edu. The file planning.log contains a log of a conversation between the suspect and a suspected accomplice.
+
+
+5. Yes there was a passwords.zip which has 5 password?.txt files inside. We cracked the password for the zip and it was "warrant". Each password?.txt contains a different short string of characters that are most likely passwords.
+
+
+6. The suspect's internet history shows that they googled "nerf guns" and visited the weapon supplier's website (hasbro.com). The suspect also watched a video about enhancing the weapon. We found this information inside the file places.sqlite which is the way that firefox stores internet history.
+
+7. evil_plan.bmp was located in the suspects documents folder and was deleted. There is a command in the .bash_history file that deletes this file. It is most likely that the file plan_thumbnail.png is a low quality version of this plan.
+
+8.
+
+logged into the machine at 2009-11-23 14:44:09
+
+downloaded files for metasploit 2009-11-23 22:33:11
+
+Had conversation with accomplice at 2009-11-25 01:56:28
+
+downloaded files for hydra password cracker around 2009-11-25 09:44:53
+
+downloaded a password dictionary called password.lst at 2009-11-25 13:58:45
+
+modified passwords.zip at 2009-11-29 16:16:44
+
+ran filefrag command on evil_plan.bmp (could have been done automatically) at 2009-11-30 12:14:49
+
+The last activity was loading www.bbcworldnew.com at 2009-11-30 12:13:35
+
+9. The suspect's deletion of evil_plan.bmp in their .bash_history file is very suspicious as well as how they have set up the puppy distro. Downloading all of the pentesting software (metasploit, hydra, password list, etc.) just before looking up nerf guns and how to improve them all paint the suspect in a bad light. The suspect also connected to fafner.eecs.umich.edu, 141.212.109.58, 141.212.111.42 over ssh from his known_hosts file. We were able to log into the root user using the password that the suspect cracked in password5.txt which was jjdMn7vM3wU5tA.
+
+10. Dr. Academic Researcher owns the machine.
+
+11. The machine is running an apache web server.
+
+12.
+
+13. The suspect has defaced the web page to make fun of Dr. Academic Researcher
